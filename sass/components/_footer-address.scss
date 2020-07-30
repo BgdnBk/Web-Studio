@@ -1,8 +1,8 @@
 .section {
 
   &-address {
-    padding-bottom: 25px;
-    margin-right: 69px;
+    padding-bottom: 60px;
+    // margin-right: 69px;
   }
 }
 
@@ -23,6 +23,7 @@
 .address {
 
   &-list {
+    text-align: center;
 
     & .text {
       font-weight: 400;  

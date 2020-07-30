@@ -1,8 +1,9 @@
 .section {
 
   &-join {
-    padding-bottom: 56px;
-    margin-right: 94px;
+    
+    padding-bottom: 60px;
+    // margin-right: 94px;
   }
 }
 
@@ -11,6 +12,7 @@
   &-subscribe {
     color: $primary-text-color;
   
+    // text-align: center;
     font-weight: 900;
     font-size: 14px;
     line-height: 1.14;
@@ -18,6 +20,10 @@
     text-transform: uppercase;  
     display: block;
     padding-bottom: 20px;
+
+    @media screen and (max-width: $tablet-max-width){
+      text-align: center;
+    }
   }
 }
 
@@ -25,6 +31,8 @@
 
   &-subscribe {
     display: flex;
+    justify-content: center;
+    
 
     & .link {
       border-radius: 50%;

@@ -59,7 +59,7 @@
     text-align: center;
     background-color: #000000;  
     background-image: $hero-gradient,
-       url(../images/HeaderImg75.jpg);  
+       url(../images/Header_img.jpg);  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,5 +69,20 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px ;
+
+    @media screen and (min-width: $mobile-width) {
+      min-width: $mobile-width;
+      // padding-bottom: 60px;    
+    }
+  
+    @media screen and (min-width: $tablet-width) {
+      min-width: $tablet-width;
+      // padding-bottom: 60px;    
+    }    
+
+    @media screen and (min-width: $desctop-width) {
+      max-width: $desctop-width;
+      // padding-bottom: 60px;    
+    }   
   }
 }

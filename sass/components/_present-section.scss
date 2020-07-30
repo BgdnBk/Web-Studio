@@ -1,9 +1,20 @@
+.section-present {
+
+  @media screen and (max-width: $tablet-max-width){
+    width: $tablet-max-width;
+    display: none;      
+  }
+}
+
+
 .list-present {
   display: flex;
 
     & .item:not(:last-child) {
       margin-right: 30px;
     }
+
+  
 }
 
 .container-present {
@@ -19,7 +30,7 @@
     width: 370px;
     height: 294px;
     display: block;
-   }
+   }   
 }
 
 .title-present {

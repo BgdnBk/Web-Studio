@@ -10,49 +10,59 @@
 </head>
 <body>
 <!-- хедер -->
-  <header class="header">
+  <header class="header container">
 <!-- навигация со ссылками по сайту -->
-    <nav class="nav-header container">
+    
       <a href="index.html" class="link-logo"><span class="logo">Web </span>
           <span class="logo-studio">Studio</span>
       </a>
-      <ul class="list-header list">
-        <li class="item">
-          <a href="index.html" class="link current-page">Студия</a>
-        </li>
-        <li class="item">
-          <a href="portfolio.html" class="link">Портфолио</a>
-        </li>
-        <li class="item">
-          <a href="" class="link ">Контакты</a>
-        </li>
-      </ul>     
-<!-- контакты -->
-    <!-- <div class="container"> -->
-      <address class="address-header "> 
-        <ul class="list-address list">
-          <!-- електроннaя почтa -->
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link mail">
-              <svg class="icon mailHeader">
-                <use href="./images/sprite.svg#icon-mailHeader"></use>
-              </svg>
-              info@devstudio.com
-            </a> 
-          </li>
-          <!-- телефон -->
-          <li class="item">
-            <a href="tel:+38 096 111 11 11" class="link tel">
-              <svg class="icon telHeader">
-                <use href="./images/sprite.svg#icon-smartphoneHeader"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </address>    
-      <!-- </div> -->
-     </nav>
+
+      <button type="button" class="menu-button is-open" aria-controls="menu-mobile"
+      aria-expanded="false" data-menu-button>
+        <svg width="40px" height="40px" aria-label="мобильное меню">
+          <use class="icon-burger" href="./images/sprite.svg#icon-burger"></use>
+          <use class="icon-menu-close" href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+        <!-- menu nav -->
+        <div class="menu-mobile is-open" id="menu-mobile" data-menu>
+        <nav class="nav-header ">
+          <ul class="list-header list">
+            <li class="item">
+              <a href="index.html" class="link current-page">Студия</a>
+            </li>
+            <li class="item">
+              <a href="portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="" class="link ">Контакты</a>
+            </li>
+          </ul>   
+        </nav>
+          <address class="address-header "> 
+            <ul class="list-address list">
+              <!-- електроннaя почтa -->
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link mail">
+                  <svg class="icon mailHeader">
+                    <use href="./images/sprite.svg#icon-mailHeader"></use>
+                  </svg>
+                  info@devstudio.com
+                </a> 
+              </li>
+              <!-- телефон -->
+              <li class="item">
+                <a href="tel:+38 096 111 11 11" class="link tel">
+                  <svg class="icon telHeader">
+                    <use href="./images/sprite.svg#icon-smartphoneHeader"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>    
+        </div>
+     
   </header>
 <!-- главный контент -->
   <main>
@@ -126,7 +136,7 @@
     </div>
     </section>
 <!-- секция Features -->
-    <section class="section ">
+    <section class="section">
       <div class="container">
       <!-- <h2>Наши приемущества</h2> -->
         <ul class="list-features list">
@@ -171,7 +181,7 @@
       </div>
     </section> 
 <!-- секция чем мы занимаемся -->
-    <section class="section">
+    <section class="section section-present">
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
       <ul class="list-present list">
@@ -505,9 +515,10 @@
        <!-- border-footer  --> 
     <!-- copywriting -->
     <div class="copywriting">
-      <p class="container">&copy;2020 | Developed by GoIT Students </p>
+      <p class="container">&copy;2020 | Developed by Bohdan B </p>
     </div> 
   </footer>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>

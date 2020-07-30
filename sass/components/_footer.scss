@@ -1,11 +1,25 @@
 .footer {
     background-color: $footer-bgc;
-
   & .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: baseline;
     padding-top: 48px;
+
+    @media screen and (min-width: $tablet-width){
+      width: $tablet-width;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: $desctop-width){
+      width: $desctop-width;
+      display: flex;
+      justify-content: space-between;      
+      align-items: baseline;
+      margin-left: auto;
+    }
   }
 }
 
@@ -14,6 +28,7 @@
   & .logo {
     &-studio {
       color: $primary-text-color;
+      margin: 0;
     }
   }
 }
@@ -24,6 +39,7 @@
     &-logo {
       display: flex; 
 
+      justify-content: center;
       font-family: Raleway;  
       font-weight: 700;
       font-size: 22px;

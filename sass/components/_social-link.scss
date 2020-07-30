@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px; 
+    // margin-bottom: 24px; 
+    padding-bottom: 24px;
     
     & .item:not(:last-child) {
       margin-right: 10px;
