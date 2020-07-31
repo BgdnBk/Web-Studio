@@ -23,12 +23,14 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1) ;
 
-  min-width: 528px;
-  min-height: 581px;
+  // width: 528px;
+  // height: 581px;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-top: 94px;
+  
 
   background-color: $primary-text-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
@@ -37,6 +39,16 @@
   border-radius: 4px;  
 
   transition: transform $timing $duration;  
+
+  @media screen and (max-width: $mobile-max-width) {
+    position: relative;
+    top: 50%;
+    width: 450px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;  
+  }
 }
 
 .modal {

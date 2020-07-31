@@ -851,12 +851,11 @@ textarea {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-top: 94px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -865,6 +864,18 @@ textarea {
   transition: -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    position: relative;
+    top: 50%;
+    width: 450px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
 }
 
 .modal-close {

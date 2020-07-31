@@ -1,8 +1,18 @@
 .container {
 
   &-gallery {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    @media screen and(min-width: $tablet-width ){
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+
+    // @media screen and(min-width: $tablet-width ){
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
   }
 }
 
