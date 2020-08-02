@@ -1148,9 +1148,6 @@ textarea {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .list-features .item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
