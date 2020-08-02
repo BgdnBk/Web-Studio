@@ -799,6 +799,13 @@ textarea {
 }
 
 .hero-img {
+  max-width: 767px;
+  min-height: 400px;
+  padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: #000000;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_img.jpg);
@@ -807,12 +814,6 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 767px;
-  min-height: 400px;
-  padding-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 
 @media screen and (min-width: 480px) {
