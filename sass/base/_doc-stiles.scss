@@ -3,13 +3,6 @@ body {
   color: $text-color;
   font-family: Roboto, sans-serif;  
   font-size: 14px;
-
- 
-
-  // @media screen and (min-width: $tablet-width) {
-  //   width: 767px;
-  //   padding-bottom: 60px;
-  // }
 }
 
 .link {
@@ -47,7 +40,7 @@ button {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

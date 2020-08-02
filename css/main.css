@@ -290,7 +290,7 @@ button {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -798,29 +798,39 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 767px;
+  min-height: 400px;
   padding-top: 94px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 @media screen and (min-width: 480px) {
   .hero-img {
-    min-width: 480px;
+    max-width: 767px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_img.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-img {
-    min-width: 768px;
+    max-width: 1199px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_img@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-img {
-    max-width: 1200px;
+    max-width: 1600px;
+    min-height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_img@3x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_img@3x.jpg);
   }
 }
 

@@ -63,26 +63,33 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1600px;
-    height: 600px;  
+    max-width: $mobile-max-width;
+    min-height: 400px;  
     padding-top: 94px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px ;
+    padding-top: 118px ;
+    padding-bottom: 118px;
 
     @media screen and (min-width: $mobile-width) {
-      min-width: $mobile-width;
-      // padding-bottom: 60px;    
+      max-width: $mobile-max-width;
+      background-image: $hero-gradient,
+      url(../images/Header_img.jpg);         
     }
   
     @media screen and (min-width: $tablet-width) {
-      min-width: $tablet-width;
-      // padding-bottom: 60px;    
+      max-width: $tablet-max-width;
+      background-image: $hero-gradient,
+      url(../images/Header_img@2x.jpg);          
     }    
 
-    @media screen and (min-width: $desctop-width) {
-      max-width: $desctop-width;
-      // padding-bottom: 60px;    
+    @media screen and (min-width: $desctop-width) { 
+      max-width: $hero-maxwidth; 
+      min-height: 600px;  
+      padding-bottom: 200px;  
+      padding-top: 200px;
+      background-image: $hero-gradient,
+      url(../images/Header_img@3x.jpg);          
     }   
   }
 }
