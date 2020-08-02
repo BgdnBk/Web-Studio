@@ -506,6 +506,8 @@ textarea {
     width: 100%;
     background-color: #FFFFFF;
     text-align: center;
+    z-index: 4;
+    padding-bottom: 60px;
   }
 }
 
@@ -605,6 +607,12 @@ textarea {
 
 .address-header .link:not(:last-child) {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .address-header .link {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
