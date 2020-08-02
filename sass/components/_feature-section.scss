@@ -88,11 +88,11 @@
 
     & .item {
 
-      
+      margin-bottom: 30px;
 
-      @media screen and (min-width: $mobile-width){
-        margin-bottom: 30px;
-      }
+      // @media screen and (min-width: $mobile-width){
+      //   margin-bottom: 30px;
+      // }
 
       
       @media screen and (min-width: $tablet-width){
