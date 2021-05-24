@@ -1,24 +1,17 @@
 .container {
-  
-  & .address-header{
+  & .address-header {
     margin-left: auto;
   }
 }
 
 .address-header {
-
   display: flex;
   font-style: normal;
   align-items: center;
-  justify-content: center;   
+  justify-content: center;
   margin-left: auto;
 
-  // @media screen and (max-width: $mobile-max-width) {
-  //   padding-bottom: 60px; 
-  // }
-
-  @media screen and (min-width: $tablet-width){ 
-
+  @media screen and (min-width: $tablet-width) {
     & .item:not(:last-child) {
       margin-right: 30px;
     }
@@ -26,119 +19,94 @@
 }
 
 .address-header {
-  
-    & .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $text-color;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      padding-left: 0;
-      padding-right: 0;
+  & .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 0;
+    padding-right: 0;
 
-      // font-weight: 500;
-      // font-size: 18px;
-      // line-height: 1.16;
-      // letter-spacing: 0.02em;
-      
-      transition-property: color;
-      transition-duration: $duration;
-      transition-timing-function: $timing;
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
 
-          &:not(:last-child) {
-            margin-bottom: 10px;
-          }
-
-          @media screen and (max-width: $mobile-max-width){ 
-            padding-bottom: 0px;
-          }   
-
-      @media screen and(min-width: $tablet-width) and(max-width: $tablet-max-width){
-          margin-left: 84px;          
-          padding: 0;
-          margin-bottom: 10px;
-
-          // &:not(:last-child) {
-          //   margin-left: 84px;
-          // }
-        }
-      }
-
-      &:hover, &:focus {
-        color: $accent-color;    
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
 
-    @media screen and (max-width:$mobile-max-width){
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.16;
-      letter-spacing: 0.02em;
+    @media screen and (max-width: $mobile-max-width) {
+      padding-bottom: 0px;
     }
 
-    @media screen and (min-width: $desctop-width){         
+    @media screen and(min-width: $tablet-width) and(max-width: $tablet-max-width) {
+      margin-left: 84px;
       padding: 0;
-      // margin-bottom: 10px;
-
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
+      margin-bottom: 10px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (max-width: $mobile-max-width) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width: $desctop-width) {
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .list-address {
-  // display: flex;
   font-style: normal;
-  // align-items: baseline;
   justify-content: center;
-  
-    
 
-    @media screen and (min-width: $tablet-width) {
-      // display:flex;
-      // padding: 0;
-      // margin: 0;
-
-      display: flex;
-      padding: 0;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin: 0;
-      // align-items: baseline;
-
-      // & .item:not(:last-child) {
-      //   margin-right: 50px;
-      // }
-    }
-
-    // @media screen and (max-width: $desctop-width) and (min-width: $tablet-width){
-    //   margin-top: 21px;
-    // }
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+  }
 }
 
 .list-address {
-  & .mail:hover, .mail:focus,
-  & .tel:hover , .tel:focus {
-    color: $accent-color
+  & .mail:hover,
+  .mail:focus,
+  & .tel:hover,
+  .tel:focus {
+    color: $accent-color;
   }
 }
 
 %iconAddress {
-
   display: inline-flex;
   align-items: center;
-  margin-right: 10px; 
+  margin-right: 10px;
   fill: currentColor;
 }
 
-.mailHeader {  
+.mailHeader {
   @extend %iconAddress;
   width: 16px;
-  height: 12px;  
+  height: 12px;
 
-    &:hover, &:focus {
-      color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .telHeader {
@@ -146,8 +114,8 @@
   width: 10px;
   height: 16px;
 
-    &:hover, &:focus {
-      color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
-

@@ -1,7 +1,7 @@
 body {
   background-color: $primary-text-color;
   color: $text-color;
-  font-family: Roboto, sans-serif;  
+  font-family: Roboto, sans-serif;
   font-size: 14px;
 }
 
@@ -12,19 +12,25 @@ body {
   letter-spacing: 0.02em;
   margin: 0;
 
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
-  color: $title-text-color;  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-text-color;
 }
 
 a {
@@ -44,53 +50,37 @@ img {
   height: auto;
 }
 
-.section {  
+.section {
   padding-bottom: 94px;
-  // padding-left: 15px;
-  // padding-right: 15px;
+
   margin-left: auto;
   margin-right: auto;
-  
+
   @media screen and (min-width: $mobile-width) {
-    // max-width: $mobile-width;
-    padding-bottom: 60px;    
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: $tablet-width) {
-    // max-width: $tablet-width;
-    padding-bottom: 60px;    
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: $desctop-width) {
-    // max-width: $desctop-width;
-    padding-bottom: 60px;    
+    padding-bottom: 60px;
   }
 }
 
-
 .container {
-  // border: 3px solid red;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  // max-width: 1200px;  
-  
-  
-
-  // @media screen and (min-width: $mobile-width) {
-  //   max-width: $mobile-width;
-  //   // max-width: 767px;   
-  // }
 
   @media screen and (min-width: $tablet-width) {
     max-width: $tablet-width;
-    // padding-bottom: 60px;    
   }
 
   @media screen and (min-width: $desctop-width) {
     max-width: $desctop-width;
-    // padding-bottom: 60px;    
   }
 }
 

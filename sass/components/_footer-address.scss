@@ -1,13 +1,10 @@
 .section {
-
   &-address {
     padding-bottom: 60px;
-    // margin-right: 69px;
   }
 }
 
 .footer {
-
   &-address {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -16,17 +13,16 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    display: block; 
+    display: block;
   }
 }
 
 .address {
-
   &-list {
     text-align: center;
 
     & .text {
-      font-weight: 400;  
+      font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
@@ -36,9 +32,7 @@
 }
 
 .address {
-
   &-list {
-
     & .item + .item {
       padding-bottom: 9px;
     }
@@ -46,15 +40,14 @@
 }
 
 .address {
-
   &-list {
-
     & .link {
       transition-property: color;
       transition-duration: $duration;
       transition-timing-function: $timing;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $accent-color;
       }
     }

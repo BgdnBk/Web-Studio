@@ -1,22 +1,19 @@
 .footer {
-    background-color: $footer-bgc;
+  background-color: $footer-bgc;
   & .container {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: baseline;
     padding-top: 48px;
 
-    @media screen and (min-width: $tablet-width){
+    @media screen and (min-width: $tablet-width) {
       width: $tablet-width;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
     }
 
-    @media screen and (min-width: $desctop-width){
+    @media screen and (min-width: $desctop-width) {
       width: $desctop-width;
       display: flex;
-      justify-content: space-between;      
+      justify-content: space-between;
       align-items: baseline;
       margin-left: auto;
     }
@@ -24,7 +21,6 @@
 }
 
 .footer {
-
   & .logo {
     &-studio {
       color: $primary-text-color;
@@ -34,20 +30,19 @@
 }
 
 .footer {
-  
   & .link {
     &-logo {
-      display: flex; 
+      display: flex;
 
       justify-content: center;
-      font-family: Raleway;  
+      font-family: Raleway;
       font-weight: 700;
       font-size: 22px;
       line-height: 1.18;
       letter-spacing: 0.03em;
-      
+
       padding-bottom: 8px;
       text-decoration: none;
     }
-  }  
+  }
 }

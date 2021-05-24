@@ -11,7 +11,6 @@
 }
 
 .backdrop {
-
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -22,10 +21,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) ;
+  transform: translate(-50%, -50%) scale(1);
 
-  // width: 528px;
-  // height: 581px;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 40px;
@@ -33,15 +30,12 @@
   margin-top: 94px;
   margin-bottom: 94px;
 
-  
-
   background-color: $primary-text-color;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;  
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 
-  transition: transform $timing $duration;  
+  transition: transform $timing $duration;
 
   @media screen and (max-width: $mobile-max-width) {
     position: relative;
@@ -50,59 +44,52 @@
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;  
+    padding-left: 20px;
   }
 }
 
 .modal {
-  &-close  {
+  &-close {
     position: absolute;
     top: 1%;
     right: 5px;
     transform: translate(-50% -50%) scale(1);
-  
+
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     outline: none;
-    background-color:$primary-text-color;
-  
-    transition: border-color $duration $timing,
-                transform $duration $timing;
+    background-color: $primary-text-color;
+
+    transition: border-color $duration $timing, transform $duration $timing;
   }
 }
 
 .modal {
-
   &-close {
-
-    & .icon {   
-      width: 75%; 
+    & .icon {
+      width: 75%;
       height: 100%;
       fill: $title-text-color;
-    
-      transition: fill $duration $timing,
-                  border-color $duration $timing;
+
+      transition: fill $duration $timing, border-color $duration $timing;
     }
   }
 }
 
 .modal {
-
   &-close {
-
-    &:hover, &:focus {
-
-      & .icon {   
+    &:hover,
+    &:focus {
+      & .icon {
         fill: $accent-color;
-      }       
-    }   
+      }
+    }
   }
 }
 
 .modal {
-
   &-name {
     display: block;
     font-style: normal;

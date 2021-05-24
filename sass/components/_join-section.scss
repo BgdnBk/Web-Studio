@@ -1,38 +1,31 @@
 .section {
-
   &-join {
-    
     padding-bottom: 60px;
-    // margin-right: 94px;
   }
 }
 
 .cosial {
-
   &-subscribe {
     color: $primary-text-color;
-  
-    // text-align: center;
+
     font-weight: 900;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     display: block;
     padding-bottom: 20px;
 
-    @media screen and (max-width: $tablet-max-width){
+    @media screen and (max-width: $tablet-max-width) {
       text-align: center;
     }
   }
 }
 
 .list {
-
   &-subscribe {
     display: flex;
     justify-content: center;
-    
 
     & .link {
       border-radius: 50%;
@@ -43,7 +36,8 @@
 .list {
   &-susubscribe {
     & .link {
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $accent-color;
       }
     }
